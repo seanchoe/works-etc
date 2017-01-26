@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Sean's Works</title>
+
+		<link rel="icon" type="image/png" href="favicon.png" />
+	    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-ipad-retinahd.png">
+
+		<link rel="stylesheet" href="css/main.css">
+		<script src="./js/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="./js/bower_components/angular/angular.min.js"></script>
+		<script src="./js/bower_components/angular-route/angular-route.min.js"></script>
+		<script src="./js/app.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="sidebar-button" id="sidebar-button"></div>
+			<div class="sidebar" id="sidebar" ng-controller="NavigationCtrl">
+				<div class="title">
+					<a class="logo" href="//seanchoe.com"><img src="images/sidebar_logo.svg" alt="logo" /></a>
+					<h2>SEAN CHOE</h2>
+					<a href="#{{ homeId }}" class="works-home-link"><h3>WORKS</h3></a>
+				</div>
+				<div class="navigation-wrapper" ng-cloak>
+					<div class="navigation">
+						<ul class="company">
+							<li ng-repeat="company in companies">
+								<h3 class="company-name">{{ company.name }}</h3>
+								<ul class="work">
+									<li ng-repeat="work in company.works">
+										<a class="work-link {{ isActive(work.id) }}" href="#{{ work.id }}"><h4 class="work-title">{{ work.name }}</h4></a>
+										<span class="work-year">{{ work.year }}</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- .navigation -->
+				</div><!-- .navigation-wrapper -->
+			</div><!-- .sidebar -->
+			<div class="main">
+				<div class="content-wrapper">
+					<div class="content" id="content" ng-controller="ContentCtrl" ng-cloak>
+						<h1>{{ workName() }}</h1>
+						<div class="info-wrapper">
+							<span class="company-name">{{ companyName() }}</span>
+							<span class="work-year">{{ workYear() }}</span>
+						</div>
+						<div ng-view></div>
+					</div><!-- .content -->
+				</div><!-- .content-wrapper -->
+			</div><!-- .main -->
+		</div><!-- .wrapper -->
+	</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Sean Choe Works",
+  "homepage": "http://seanchoe.github.io/works/#/blocks",
+  "authors": [
+    "Sean Choe <sean@seanchoe.com>"
+  ],
+  "description": "Sean Choe Works",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}
