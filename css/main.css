@@ -210,6 +210,14 @@ a:hover {
   display: inline-block;
 }
 
+.image-grid > li img {
+  cursor: pointer;
+}
+
+.viewer-container {
+  background-color: rgba(0,0,0,.8) !important;
+}
+
 .contribution-label {
 	display: block;
 	font-size: 13px;
@@ -308,7 +316,7 @@ a:hover {
 	.main > .content-wrapper > .content {
 		flex: 1 1 auto;
 		padding: 0 32px;
-		max-width: 680px;
+		max-width: 800px;
 	}
 
 	.content h1 {

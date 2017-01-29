@@ -1,11 +1,91 @@
 [
 	{
-		"name": "Menlo Church",
+		"name": "Logos and Graphics",
 		"works": [
 			{
-				"id": "slides",
-				"name": "Promotion Slides",
+				"id": "menlo-church",
+				"name": "Menlo Church",
 				"year": "2016"
+			},
+			{
+				"id": "seanchoe",
+				"name": "Sean Choe",
+				"year": "2016"
+			},
+			{
+				"id": "mariana-stones",
+				"name": "Mariana Stones",
+				"year": "2013"
+			},
+			{
+				"id": "springwave",
+				"name": "Springwave",
+				"year": "2013"
+			},
+			{
+				"id": "nadoo",
+				"name": "Nadoo",
+				"year": "2013"
+			},
+			{
+				"id": "mtnfl",
+				"name": "MTnFL",
+				"year": "2014"
+			},
+			{
+				"id": "table-church",
+				"name": "The Table Church",
+				"year": "2016"
+			}
+		]
+	},
+	{
+		"name": "User Interface",
+		"works": [
+			{
+				"id": "gonitely",
+				"name": "GoNitely",
+				"year": "2016"
+			},
+			{
+				"id": "thinkfree",
+				"name": "ThinkFree",
+				"year": "2013"
+			},
+			{
+				"id": "photo-app",
+				"name": "Photo App",
+				"year": "2016"
+			},
+			{
+				"id": "slack-team",
+				"name": "Slack Team",
+				"year": "2016"
+			},
+			{
+				"id": "device-warranty",
+				"name": "Device Warranty Prototype",
+				"year": "2016"
+			}
+		]
+	},
+	{
+		"name": "Illustrations",
+		"works": [
+			{
+				"id": "gifts",
+				"name": "Gifts",
+				"year": "2015-2016"
+			},
+			{
+				"id": "messenger-stickers",
+				"name": "Messenger Stickers",
+				"year": "2015-2016"
+			},
+			{
+				"id": "cartoons",
+				"name": "Cartoons",
+				"year": "2014-2016"
 			}
 		]
 	}

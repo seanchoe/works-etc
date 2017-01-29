@@ -50,7 +50,8 @@ function($scope, $routeParams, $http, contentService) {
 			var options = {
 				rotatable: false,
 				scalable: false,
-				url: "data-original"
+				url: "data-original",
+				transition: false
 			};
 			var viewer = new Viewer(gallery, options);
 		}
